@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/CodeBase912/interior-consultant-page-challenge/issues"
   },
-  "homepage": "https://github.com/CodeBase912/interior-consultant-page-challenge#readme"
+  "homepage": "https://github.com/CodeBase912/interior-consultant-page-challenge#readme",
+  "devDependencies": {
+    "eslint": "^8.17.0"
+  }
 }
