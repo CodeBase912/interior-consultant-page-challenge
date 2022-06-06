@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-1: "Crimson Pro", serif;
+  --ff-2: "Lora", serif;
+  --ff-3: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.header__container {
+  display: flex;
+  padding: 46px;
+}
+
+.site__name {
+  font-family: var(--ff-1);
+  padding: 8px;
+  font-size: 18px;
+  border: 1px solid #fff;
+  width: max-content;
+  font-weight: 200;
+  line-height: 16px;
+}
