@@ -4,9 +4,9 @@
 }
 
 :root {
-  --ff-1: "Crimson Pro", serif;
-  --ff-2: "Lora", serif;
-  --ff-3: "Montserrat", sans-serif;
+  --font-1: "Crimson Pro", serif;
+  --font-2: "Lora", serif;
+  --font-3: "Montserrat", sans-serif;
 }
 
 body {
@@ -16,15 +16,45 @@ body {
 
 .header__container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 46px;
 }
 
 .site__name {
-  font-family: var(--ff-1);
+  font-family: var(--font-1);
   padding: 8px;
   font-size: 18px;
   border: 1px solid #fff;
   width: max-content;
   font-weight: 200;
   line-height: 16px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__link:not(:last-child) {
+  margin-right: 86px;
+}
+
+.nav__link > a {
+  font-family: var(--font-3);
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav__link > a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.nav__link--active > a {
+  border-bottom: 2px solid #fff;
 }
