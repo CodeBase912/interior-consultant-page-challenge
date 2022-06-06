@@ -4,7 +4,10 @@
   "description": "A solution to the Interior Consultant challenge on Devchallenges.io",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prebuild": "rimraf build",
+    "build": "rollup -c",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix"
   },
   "repository": {
     "type": "git",
@@ -18,8 +21,15 @@
   },
   "homepage": "https://github.com/CodeBase912/interior-consultant-page-challenge#readme",
   "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@web/rollup-plugin-html": "^1.10.3",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0"
+    "eslint-plugin-prettier": "^4.0.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.75.5",
+    "rollup-plugin-uglify": "^6.0.4"
   }
 }
