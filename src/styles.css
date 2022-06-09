@@ -7,12 +7,19 @@
   --font-1: "Crimson Pro", serif;
   --font-2: "Lora", serif;
   --font-3: "Montserrat", sans-serif;
+
+  --color-grey: #828282;
 }
 
 body {
   background-color: #000;
   color: #fff;
   padding: 0 77px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .header__container {
@@ -46,8 +53,6 @@ body {
 .nav__link > a {
   font-family: var(--font-3);
   font-weight: 700;
-  color: #fff;
-  text-decoration: none;
   font-size: 18px;
   padding-bottom: 8px;
   border-bottom: 2px solid transparent;
@@ -74,6 +79,7 @@ main {
   flex-direction: column;
   justify-content: center;
   margin-right: 50px;
+  flex: 1;
 }
 
 .hero__title {
@@ -103,6 +109,13 @@ main {
   color: #fff;
   cursor: pointer;
   padding: 0;
+  outline: none;
+  border: none;
+}
+
+.hero__img__container {
+  position: relative;
+  flex: 1.5;
 }
 
 .hero__img {
@@ -110,7 +123,45 @@ main {
   object-fit: contain;
 }
 
+.hero__user__card {
+  font-family: var(--font-1);
+  position: absolute;
+  bottom: -82px;
+  right: 32px;
+  background-color: #000;
+  padding: 20px;
+}
+
+.hero__user__info {
+  display: flex;
+  align-items: center;
+}
+
 .hero__user__img {
   width: 50px;
   height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.hero__user__details {
+  font-family: var(--font-3);
+  font-weight: 500;
+}
+
+.hero__user__name {
+  font-size: 14px;
+}
+
+.hero__user__title {
+  font-size: 12px;
+  color: var(--color-grey);
+}
+
+.hero__user__contribution {
+  margin-top: 20px;
+  font-family: var(--font-2);
+  font-weight: 700;
+  font-size: 24px;
+  width: 287px;
 }
