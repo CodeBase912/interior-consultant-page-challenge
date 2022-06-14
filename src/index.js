@@ -1,8 +1,6 @@
-const bruv = "maGuy";
-console.log(`Hey there ${bruv}`);
-
-const test = () => {};
-export default test;
+// ------------------------------------------------------------------------
+// Define Utility Functions
+// ------------------------------------------------------------------------
 
 /**
  * toggles the navBar
@@ -18,11 +16,13 @@ const toggleNav = (elementIdentifier, classToToggle) => {
     console.log("Element not found");
   }
 
-  console.log("toggle nav>>>>>>>");
-
   // Toggle open class
   element.classList.toggle(classToToggle);
 };
+
+// ------------------------------------------------------------------------
+// Add Event Listeners
+// ------------------------------------------------------------------------
 
 // Add click event from navBtn
 const navBtn = document.querySelector("#nav-toggle-btn");
