@@ -45,8 +45,41 @@ a {
   line-height: 16px;
 }
 
-.fa-solid {
+.nav__toggle__btn {
+  background: none;
   display: none;
+  outline: none;
+  border: none;
+  position: relative;
+  z-index: 51;
+}
+
+.nav__toggle__btn--open .nav__hamburger-menu__bar:nth-child(1) {
+  transform: rotateZ(-45deg);
+}
+.nav__toggle__btn--open .nav__hamburger-menu__bar:nth-child(2) {
+  opacity: 0;
+}
+.nav__toggle__btn--open .nav__hamburger-menu__bar:nth-child(3) {
+  transform: rotateZ(45deg);
+}
+
+.nav__hamburger-menu__bar {
+  content: "";
+  width: 22px;
+  height: 3px;
+  margin-top: 4px;
+  border-radius: 2px;
+  background-color: white;
+  transform-origin: 21px;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.nav__hamburger-menu__bar:nth-child(0) {
+  margin-top: 0;
+}
+
+.nav__toggle__btn .fa-solid {
   font-size: 30px;
 }
 
@@ -190,7 +223,7 @@ footer .footer__content__link {
   color: var(--clr-black);
 }
 
-/* Responsive */
+/* Breakpoint: Tablet landscape */
 @media screen and (max-width: 1200px) {
   .hero__content__container {
     flex: 1;
@@ -231,6 +264,7 @@ footer .footer__content__link {
   }
 }
 
+/* Breakpoint: Tablet portrait */
 @media only screen and (max-width: 900px) {
   body {
     padding: 0 40px;
@@ -260,12 +294,13 @@ footer .footer__content__link {
   }
 }
 
+/* Breakpoint: Mobile landscape */
 @media only screen and (max-width: 800px) {
   .hero__container {
     flex-direction: column;
   }
 
-  .fa-solid {
+  .nav__toggle__btn {
     display: block;
   }
 
@@ -275,13 +310,18 @@ footer .footer__content__link {
     align-items: center;
     justify-content: center;
     z-index: 50;
-    top: 0;
-    left: 0;
-    display: none;
+    top: -100vh;
+    right: 0;
     padding-left: 0;
     width: 100vw;
     height: 100vh;
     background: #000;
+
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .nav__links--open {
+    transform: translateY(100%);
   }
 
   .nav__links .fa-xmark {
@@ -313,12 +353,13 @@ footer .footer__content__link {
   }
 }
 
+/* Breakpoint: Mobile portrait */
 @media only screen and (max-width: 500px) {
   body {
     padding: 0 12px;
   }
 
-  .fa-solid {
+  .nav__toggle__btn .fa-solid {
     font-size: 25px;
   }
 
