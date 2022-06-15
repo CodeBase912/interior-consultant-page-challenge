@@ -7,7 +7,9 @@
     "prebuild": "rimraf build",
     "build": "rollup -c",
     "lint": "eslint src/**/*.js",
-    "lint:fix": "eslint src/**/*.js --fix"
+    "lint:fix": "eslint src/**/*.js --fix",
+    "predev": "rimraf build && npm run build",
+    "dev": "netlify dev"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,7 @@
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "netlify-cli": "^10.5.1",
     "rimraf": "^3.0.2",
     "rollup": "^2.75.5",
     "rollup-plugin-uglify": "^6.0.4"

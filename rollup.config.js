@@ -9,7 +9,7 @@ export default {
     dir: "build",
     // file: "main.min.js",
     format: "iife",
-    sourcemap: "inline",
+    // sourcemap: "inline",
   },
   plugins: [
     html({

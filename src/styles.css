@@ -79,10 +79,6 @@ a {
   margin-top: 0;
 }
 
-.nav__toggle__btn .fa-solid {
-  font-size: 30px;
-}
-
 .nav__links {
   list-style: none;
   display: flex;
@@ -324,13 +320,6 @@ footer .footer__content__link {
     transform: translateY(100%);
   }
 
-  .nav__links .fa-xmark {
-    position: absolute;
-    z-index: 51;
-    top: 20px;
-    right: 40px;
-  }
-
   .nav__link:not(:last-child) {
     margin-right: 0;
     margin-bottom: 32px;
@@ -361,10 +350,6 @@ footer .footer__content__link {
 @media only screen and (max-width: 500px) {
   body {
     padding: 0 12px;
-  }
-
-  .nav__toggle__btn .fa-solid {
-    font-size: 25px;
   }
 
   .hero__user__card {
