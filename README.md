@@ -26,48 +26,42 @@
 
 - [Table of Contents](#table-of-contents)
 - [Overview](#overview)
+  - [Challenge](#challenge)
   - [Built With](#built-with)
-- [Features](#features)
-- [Acknowledgements](#acknowledgements)
+- [Experience](#experience)
 - [Contact](#contact)
 
 <!-- OVERVIEW -->
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![preview](./preview.gif)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+### Challenge
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+Create a homepage following the design. The page should be responsive. Fulfill user stories below
+
+- User stories:
+  - User can see a page following the given design
+  - On mobile, user can see a collapsed navigation
+  - On mobile, when the user selects the hamburger menu, user can see the navigation
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- Semantic HTML markup
+- CSS custom properties
+- CSS Flexbox
+- <a href="https://en.bem.info/methodology/" target="_blank">BEM</a> naming convention - useful for avoiding conflicting class names
 
-## Features
+## Experience
 
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
+This project was pretty fun to build. I decided to also work on implementing a continuous build/deployment workflow using netlify which was pretty cool. Another feature I also decided to add was an asset bundler for bundling all static assets (like images and css files) as well as minifying js files into one file. I decided to use <a href="https://rollupjs.org" target="_blank">Rollup.js</a> for this with a <a href="https://github.com/rollup/plugins/tree/master/packages/babel" target="_blank">babel plugin for Rollup</a> to transpile ES6+ js to older versions of js to suport older browsers. Really liked working with this setup so I'm probably gonna use it for future javascript projects.
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb) was to build an application to complete the given user stories.
-
-## Acknowledgements
-
-<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
-
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+<!-- If you came up with a better soluiton you can let me know by sending me feedback <a href="https://sass-lang.com/" target="_blank">here</a> -->
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- LinkedIn - <a href="https://www.linkedin.com/in/tshepo-tsilo" target="_blank">https://www.linkedin.com/in/tshepo-tsilo</a>
+- Devchallenges.io - <a href="https://devchallenges.io/portfolio/CodeBase912" target="_blank">https://devchallenges.io/portfolio/CodeBase912</a>
