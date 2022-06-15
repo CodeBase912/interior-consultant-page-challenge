@@ -152,6 +152,16 @@ main {
   border: none;
 }
 
+.hero__btn > a {
+  display: flex;
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  margin-left: 15px;
+}
+
 .hero__img__container {
   flex: 1.5;
 }
