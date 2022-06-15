@@ -7,9 +7,7 @@ export default {
   output: {
     name: "myModules",
     dir: "build",
-    // file: "main.min.js",
     format: "iife",
-    // sourcemap: "inline",
   },
   plugins: [
     html({
