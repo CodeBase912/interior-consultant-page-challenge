@@ -27,8 +27,10 @@
 - [Table of Contents](#table-of-contents)
 - [Overview](#overview)
   - [Challenge](#challenge)
-  - [Built With](#built-with)
-- [Experience](#experience)
+    - [User stories](#user-stories)
+  - [My Solution](#my-solution)
+    - [Built With](#built-with)
+    - [Experience](#experience)
 - [Contact](#contact)
 
 <!-- OVERVIEW -->
@@ -41,12 +43,15 @@
 
 Create a homepage following the design. The page should be responsive. Fulfill user stories below
 
-- User stories:
-  - User can see a page following the given design
-  - On mobile, user can see a collapsed navigation
-  - On mobile, when the user selects the hamburger menu, user can see the navigation
+#### User stories
 
-### Built With
+- User can see a page following the given design
+- On mobile, user can see a collapsed navigation
+- On mobile, when the user selects the hamburger menu, user can see the navigation
+
+### My Solution
+
+#### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
@@ -55,7 +60,7 @@ Create a homepage following the design. The page should be responsive. Fulfill u
 - CSS Flexbox
 - <a href="https://en.bem.info/methodology/" target="_blank">BEM</a> naming convention - useful for avoiding conflicting class names
 
-## Experience
+#### Experience
 
 This project was pretty fun to build. I decided to also work on implementing a continuous build/deployment workflow using netlify which was pretty cool. Another feature I also decided to add was an asset bundler for bundling all static assets (like images and css files) as well as minifying js files into one file. I decided to use <a href="https://rollupjs.org" target="_blank">Rollup.js</a> for this with a <a href="https://github.com/rollup/plugins/tree/master/packages/babel" target="_blank">babel plugin for Rollup</a> to transpile ES6+ js to older versions of js to suport older browsers. Really liked working with this setup so I'm probably gonna use it for future javascript projects.
 
