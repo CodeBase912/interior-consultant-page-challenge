@@ -351,6 +351,10 @@ footer .footer__content__link {
   .nav__link--active > a {
     border-bottom: 2px solid #fff;
   }
+
+  .hero__content__container {
+    margin-right: 0;
+  }
 }
 
 /* Breakpoint: Mobile portrait */
